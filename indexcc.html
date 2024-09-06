@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Candy Crush</title>
+        <link rel="stylesheet" href="candy.css">
+        <script src="candy.js"></script>
+        <style>
+            button {
+                margin-top: 10px;
+                padding: 7px 13px;
+                font-size: 18px;
+                cursor: pointer;
+                background-color: purple; 
+                color: white;
+                border: none;
+                border-radius: 10px;
+                transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            }
+            
+            button:hover {
+                background-color: plum; 
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+            }
+        </style>
+    </head>
+
+    <body><br>
+        <a href="main.html"><button>EXIT</button></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="indexcc.html"><button>RESTART</button></a><br>
+        <h1>Score: <span id="score">0</span></h1>
+        <div id="board"></div>
+    </body>
+</html>

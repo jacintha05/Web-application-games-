@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.ico"/>
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        button {
+            margin-top: 10px;
+            padding: 7px 15px;
+            font-size: 18px;
+            font-family: cursive;
+            cursor: pointer;
+            background-color:  rgb(14, 162, 14); 
+            color: white;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }       
+        button:hover {
+            background-color: rgb(12, 79, 12); 
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <img src="images/Bird.png" alt="bird-img" class="bird" id="bird-1">
+    <div class="message">
+        Press Enter to Start <p>and<span style="color: red;"> &uarr;</span> to Fly</p>
+        <a href="main.html"><button>EXIT</button></a>
+    </div>
+    <div class="score">
+        <span class="score_title"></span>
+        <span class="score_val"></span>
+    </div>
+</body>
+</html>
